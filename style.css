@@ -1,0 +1,82 @@
+@keyframes eat-dot-top {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes eat-dot-bottom {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes move-dot {
+  to {
+    transform: translateX(-60px);
+  }
+}
+.block-anime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.smile {
+  z-index: 100;
+}
+
+.smile-top {
+  display: flex;
+  background-color: yellow;
+  width: 100px;
+  height: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  transform: rotate(350deg);
+  animation: eat-dot-top 1s infinite;
+  z-index: 100;
+}
+
+.smile-bottom {
+  display: flex;
+  background-color: yellow;
+  width: 100px;
+  height: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transform: rotate(-350deg);
+  animation: eat-dot-bottom 1s infinite;
+  z-index: 100;
+}
+
+.box {
+  display: flex;
+  list-style: none;
+  transform: translateX(-40px);
+}
+
+.dot {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 20px;
+  animation: move-dot linear 1s infinite;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
